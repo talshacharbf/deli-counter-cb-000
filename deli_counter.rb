@@ -12,6 +12,11 @@ def line(katz_deli) #=> "The line is currently: 1. Ada 2. Grace 3. Kent"
 end
 
 def take_a_number(katz_deli,name)
-  line << (name)
+  katz_deli << (name)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+end
+
+def take_a_number(deli, name)
+  deli << name
+  puts "Welcome, #{name}. You are number #{deli.length} in line."
 end
