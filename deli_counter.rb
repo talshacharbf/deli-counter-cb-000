@@ -19,8 +19,8 @@ end
 def now_serving(katz_deli) #=> "Currently serving Grace."
   if katz_deli == []
     puts "There is nobody waiting to be served!"
-  else 
+  else
     puts "Current serving #{katz_deli[0]}"
+    katz_deli.pop(katz_deli[0])
   end
 end
-  
