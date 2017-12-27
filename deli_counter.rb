@@ -5,7 +5,7 @@ def line(katz_deli) #=> "The line is currently: 1. Ada 2. Grace 3. Kent"
   else
     line = "The line is currently: "
     katz_deli.each_with_index do |name, index|
-      line.push("#{index} #{name}")
+      line << ("#{index} #{name}")
     end
     puts line
   end
